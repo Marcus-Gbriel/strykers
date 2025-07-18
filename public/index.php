@@ -16,8 +16,8 @@ if ($final_name != '') {
         readfile($file_path);
         exit;
     } else {
-        die("404 Not Found");
+        require_once DOCUMENT_ROOT . '/pages/code/404.html';
     }
 } else {
-    die("404 Not Found");
+    require_once DOCUMENT_ROOT . '/pages/code/404.html';
 }
