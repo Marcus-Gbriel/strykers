@@ -1,0 +1,23 @@
+{
+    "version": "1.0",
+    "url" : "https://example.com",
+    "name": "ExampleApp",
+    "production": {
+        "session" : "3600",
+        "database" : {
+            "host": "127.0.0.1",
+            "port": 3306,
+            "table": "example_db",
+            "user": "example_user",
+            "password": "example_password"
+        },
+        "mail": {
+            "host": "smtp.example.com",
+            "port": 587,
+            "user": "user@example.com",
+            "password": "example_password",
+            "from": "Example <noreply@example.com>",
+            "fromName": "ExampleApp"
+        }
+    }
+}
