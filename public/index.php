@@ -16,8 +16,8 @@ if ($final_name != '') {
         readfile($file_path);
         exit;
     } else {
-        require_once DOCUMENT_ROOT . '/pages/code/404.html';
+        require_once DOCUMENT_ROOT . '/pages/code/404.php';
     }
 } else {
-    require_once DOCUMENT_ROOT . '/pages/code/404.html';
+    require_once DOCUMENT_ROOT . '/pages/code/404.php';
 }

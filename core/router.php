@@ -38,8 +38,7 @@ class router extends route_switch
                 echo "por enquanto você não pode acessar essa página";
             }
         } else {
-            http_response_code(404);
-            echo "404 Not Found";
+            require_once DOCUMENT_ROOT . '/pages/code/404.php';
         }
     }
 }
