@@ -1,3 +1,6 @@
+<?php
+http_response_code(404);
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -496,13 +499,13 @@
         }
 
         // Inicializar efeitos
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             createStars();
             playErrorSound();
 
             // Adicionar listener para os botões
             document.querySelectorAll('.btn').forEach(btn => {
-                btn.addEventListener('click', function () {
+                btn.addEventListener('click', function() {
                     console.log('🎯 Navegando para:', this.getAttribute('href'));
                 });
             });
@@ -521,7 +524,7 @@
         let konamiCode = [];
         const correctCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
 
-        document.addEventListener('keydown', function (e) {
+        document.addEventListener('keydown', function(e) {
             konamiCode.push(e.code);
             if (konamiCode.length > correctCode.length) {
                 konamiCode.shift();
